@@ -2,7 +2,7 @@
 
 This project is an application skeleton for an [AngularJS](http://angularjs.org/) web app, realized for the Social Networking course at Politecnico di Torino.
 
-The Starter Kit contains a sample AngularJS application (the one reported in the official [angular-seed](https://github.com/angular/angular-seed). AngularJS (version 1.6.2) is included in the `lib` folder, together with the [Bootstrap](https://getbootstrap.com/) framework (version 3.3.7).
+The Starter Kit contains a sample AngularJS application (the one reported in the official [angular-seed](https://github.com/angular/angular-seed). AngularJS (version 1.6.4) is included in the `lib` folder, together with the [Bootstrap](https://getbootstrap.com/) framework (version 3.3.7).
 
 Moreover, the Starter Kit is preconfigured to install a bunch of development tools for easing the development of a project:
 
@@ -38,7 +38,7 @@ app/                    --> all of the source files for the application
   index.html            --> app layout file (the main html template file of the app)
 images/                 --> (optional) images needed to the application
 lib/                    --> libraries (AngularJS and Bootstrap, namely)
-  angular/              --> AngularJS version 1.6.2
+  angular/              --> AngularJS version 1.6.4
   bootstrap/            --> Bootstrap version 3.3.7
     css/                --> Boostrap CSS classes (all)
     fonts/              --> fonts provided by Bootstrap

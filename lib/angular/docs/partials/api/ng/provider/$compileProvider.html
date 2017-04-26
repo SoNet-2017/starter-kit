@@ -1,8 +1,8 @@
-<a href='https://github.com/angular/angular.js/edit/v1.6.x/src/ng/compile.js?message=docs($compileProvider)%3A%20describe%20your%20change...#L964' class='improve-docs btn btn-primary'><i class="glyphicon glyphicon-edit">&nbsp;</i>Improve this Doc</a>
+<a href='https://github.com/angular/angular.js/edit/v1.6.x/src/ng/compile.js?message=docs($compileProvider)%3A%20describe%20your%20change...#L966' class='improve-docs btn btn-primary'><i class="glyphicon glyphicon-edit">&nbsp;</i>Improve this Doc</a>
 
 
 
-<a href='https://github.com/angular/angular.js/tree/v1.6.2/src/ng/compile.js#L964' class='view-source pull-right btn btn-primary'>
+<a href='https://github.com/angular/angular.js/tree/v1.6.4/src/ng/compile.js#L966' class='view-source pull-right btn btn-primary'>
   <i class="glyphicon glyphicon-zoom-in">&nbsp;</i>View Source
 </a>
 
@@ -459,10 +459,20 @@ calling the controller&#39;s constructor.
 If enabled (true), the compiler assigns the value of each of the bindings to the
 properties of the controller object before the constructor of this object is called.</p>
 <p>If disabled (false), the compiler calls the constructor first before assigning bindings.</p>
-<p>The default value is true in Angular 1.5.x but will switch to false in Angular 1.6.x.</p>
+<p>The default value is false.</p>
 </div>
 
     
+<div class="alert alert-danger deprecation">
+  <div class="title"><strong>Deprecated:</strong>
+    <span class="since">(since 1.6.0) </span>
+    <span class="remove">(to be removed in 1.7.0) </span>
+  </div>
+  <p>This method and the option to assign the bindings before calling the controller&#39;s constructor
+will be removed in v1.7.0.</p>
+
+</div>
+
 
     
     <h4>Parameters</h4>

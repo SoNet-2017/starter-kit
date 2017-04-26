@@ -2,7 +2,7 @@
 
 
 
-<a href='https://github.com/angular/angular.js/tree/v1.6.2/src/auto/injector.js#L130' class='view-source pull-right btn btn-primary'>
+<a href='https://github.com/angular/angular.js/tree/v1.6.4/src/auto/injector.js#L130' class='view-source pull-right btn btn-primary'>
   <i class="glyphicon glyphicon-zoom-in">&nbsp;</i>View Source
 </a>
 
@@ -499,6 +499,28 @@ be retrieved as described above.</p>
   </ul>
   
   
+<h2>Properties</h2>
+<ul class="properties">
+  <li id="modules">
+    <h3><code>modules</code></h3>
+    <table class="variables-matrix return-arguments">
+  <tr>
+    <td></td>
+    <td><p>A hash containing all the modules that have been loaded into the
+$injector.</p>
+<p>You can use this property to find out information about a module via the
+<a href="api/ng/type/angular.Module#info"><code>myModule.info(...)</code></a> method.</p>
+<p>For example:</p>
+<pre><code>var info = $injector.modules[&#39;ngAnimate&#39;].info();
+</code></pre>
+<p><strong>Do not use this property to attempt to modify the modules after the application
+has been bootstrapped.</strong></p>
+</td>
+  </tr>
+</table>
+    
+  </li>
+  </ul>
 
 
 

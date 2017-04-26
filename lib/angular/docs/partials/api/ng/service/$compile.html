@@ -2,7 +2,7 @@
 
 
 
-<a href='https://github.com/angular/angular.js/tree/v1.6.2/src/ng/compile.js#L32' class='view-source pull-right btn btn-primary'>
+<a href='https://github.com/angular/angular.js/tree/v1.6.4/src/ng/compile.js#L32' class='view-source pull-right btn btn-primary'>
   <i class="glyphicon glyphicon-zoom-in">&nbsp;</i>View Source
 </a>
 
@@ -241,10 +241,12 @@ parent&#39;s scope.</p>
 the directive&#39;s element. If multiple directives on the same element request a new scope,
 only one new scope is created.</p>
 </li>
-<li><p><strong><code>{...}</code> (an object hash):</strong> A new &quot;isolate&quot; scope is created for the directive&#39;s element. The
-&#39;isolate&#39; scope differs from normal scope in that it does not prototypically inherit from its parent
-scope. This is useful when creating reusable components, which should not accidentally read or modify
-data in the parent scope.</p>
+<li><p><strong><code>{...}</code> (an object hash):</strong> A new &quot;isolate&quot; scope is created for the directive&#39;s template.
+The &#39;isolate&#39; scope differs from normal scope in that it does not prototypically
+inherit from its parent scope. This is useful when creating reusable components, which should not
+accidentally read or modify data in the parent scope. Note that an isolate scope
+directive without a <code>template</code> or <code>templateUrl</code> will not apply the isolate scope
+to its children elements.</p>
 </li>
 </ul>
 <p>The &#39;isolate&#39; scope object hash defines a set of local scope properties derived from attributes on the
@@ -334,9 +336,9 @@ properties. You can access these bindings once they have been initialized by pro
 <code>$onInit</code>, which is called after all the controllers on an element have been constructed and had their bindings
 initialized.</p>
 <div class="alert alert-warning">
-<strong>Deprecation warning:</strong> although bindings for non-ES6 class controllers are currently
-bound to <code>this</code> before the controller constructor is called, this use is now deprecated. Please place initialization
-code that relies upon bindings inside a <code>$onInit</code> method on the controller, instead.
+<strong>Deprecation warning:</strong> if <code>$compileProcvider.preAssignBindingsEnabled(true)</code> was called, bindings for non-ES6 class
+controllers are bound to <code>this</code> before the controller constructor is called but this use is now deprecated. Please
+place initialization code that relies upon bindings inside a <code>$onInit</code> method on the controller, instead.
 </div>
 
 <p>It is also possible to set <code>bindToController</code> to an object hash with the same format as the <code>scope</code> property.
